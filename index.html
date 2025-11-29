@@ -1,104 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            background-color: #f0f8ff;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4682b4;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            margin: 20px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #4682b4;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background-color: #4682b4;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        section {
-            display: none;
-        }
-        section.active {
-            display: block;
-        }
-    </style>
-    <script>
-        function showSection(id) {
-            document.querySelectorAll('section').forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(id).classList.add('active');
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            showSection('about');
-            document.querySelectorAll('nav a').forEach(link => {
-                link.addEventListener('click', (event) => {
-                    event.preventDefault();
-                    showSection(event.target.getAttribute('href').substring(1));
-                });
-            });
-        });
-    </script>
+    <meta charset="UTF-8">
+    <title>Yagho – Engineer & Maker</title>
 </head>
 <body>
-    <header>
-        <h1>Yagho Franco Grossi Mota</h1>
-    </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="about" class="active">
-        <h2>About Me</h2>
-        <p> 
-            Born and raised in Brazil, I am an Electrical Engineer Undergraduate student pursuing a Masters in Robotics at University of Michigan.<br><br>
-            My main interests are in the fields of Quantum Communication, Digital Signal Processing, Computer Vision, Automation, Mechatronics, Machine Learning.<br><br>
-            <a href="https://docs.google.com/document/d/17bEBmVnnqJkGdqd6QEG6-I_JrD3wMp5eeEKuI2KbWqo/edit?tab=t.0">Curriculum Vitae</a>
-        </p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>
-            <strong>Guitar Tablature Transcriber and Synthesizer Program</strong><br>
-            <em>April-May 2024</em><br><br>
-            Final project for ENGR 100-430 under Professor Jeffrey Fessler. The final program was able to produce standard guitar tablature of any inputted or recorded staccato non-polyphonic guitar song, as well as being able to synthesize with guitar timbre any inputted tablature, all in a modern GUI.<br><br>
-            <a href="https://github.com/connoryang1/dsp-p3.git" target="_blank">View the project on GitHub</a>
-        </p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            Professional phone number: 734-389-3937 <br>
-            Professional email: yaghofgm@umich.edu <br>
-            LinkedIn: <a href="linkedin.com/in/yagho-grossi" target="_blank">Yagho Franco Grossi Mota</a> <br>
-            GitHub: <a href="https://github.com/yaghofgm" target="_blank">yaghofgm</a>
-        </p>
-    </section>
-    <footer>
-        <p>&copy; 2025 My Personal Webpage</p>
-    </footer>
+    <h1>Welcome to my personal website!</h1>
+    <p>This is my first fully self-coded site hosted on GitHub Pages.</p>
 </body>
 </html>
